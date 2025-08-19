@@ -16,7 +16,7 @@ function Nav({image}) {
           {visible ? <div className="ham">
             <div className="ham1">About us</div>
             <div className="ham1">Our Services</div>
-            <div className="ham1">Contact us please</div>
+            <div className="ham1">Contact us</div>
           </div> : null}
           <div className="leftnav" >
             <Link to='home'  smooth={true} duration={500}><img src={image} className='logo' alt='' /></Link>

@@ -1,0 +1,154 @@
+#about{
+    height: 100vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.heading-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading-content h3{
+    color: rgb(255, 81, 26);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.heading-content h2{
+    margin-top: 5px;
+    font-size: 36px;
+    color: #212741;
+}
+
+.all-sections{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overall-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-sections{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn-sections button{
+    font-size: 18px;
+    font-weight: 600;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-sections button:hover{
+    color: rgb(255, 81, 26);
+}
+
+
+hr{
+    font-size: 0.3px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.Web-content{
+    margin-top: 2rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 25px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+th{
+    padding-right: 30px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+tr{
+    border-bottom: 1.5px solid #eee;
+}
+
+.edit{
+    color: #43ba7f;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 50px;
+    gap: 30px;
+    width: 30%;
+    height: 100%;
+}
+
+.about-content h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-btn{
+    padding: 15px 20px;
+    background: #43ba7f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.about-btn:hover{
+    color: rgb(255, 81, 26);
+}
+
+@media (max-width:750px) {
+    .overall-about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .all-sections{
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-content{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    td{
+        padding: 10px;
+    }
+}
