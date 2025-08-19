@@ -9,6 +9,7 @@ import { FaPuzzlePiece } from "react-icons/fa6";
 
 function Service() {
   return (
+    <>
     <div id='service'>
       <div className="box1">
         <div className="first-box">
@@ -71,6 +72,8 @@ function Service() {
         </div>
       </div>
     </div>
+    
+    </>
   )
 }
 

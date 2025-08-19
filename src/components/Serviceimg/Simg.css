@@ -1,0 +1,53 @@
+#image-sec {
+  width: 100%;
+  height: 45vh;
+  background-image: url(../../assets/cta-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  padding: 80px 50px;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* .text-content1{
+    width: 50%;
+} */
+
+
+.text-content1 h2{
+  width: 70%;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+  box-sizing: border-box;
+  line-height: 50px;
+}
+
+.em1{
+  color: #43ba7f;
+}
+
+.image-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 750px) {
+    #image-sec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text-content1 h2{
+        width: 100%;
+        text-align: center;
+    }
+}
