@@ -6,7 +6,7 @@
     justify-content: space-between;
     background-color: #212741;
     position: fixed;
-    opacity: 1;
+    z-index: 999;
 }
 
 

@@ -6,6 +6,7 @@ import Simg from './components/Serviceimg/Simg';
 import About from './components/About/About';
 import Testimonial from './components/testimonial/Testimonial';
 import Testi from './components/testi/Testi';
+import Partner from './components/partners/Partner';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <About/>
     <Testimonial/>
     <Testi/>
+    <Partner/>
     </>
   );
 }
