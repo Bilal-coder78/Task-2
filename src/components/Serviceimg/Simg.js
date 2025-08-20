@@ -4,7 +4,7 @@ import "./Simg.css"
 function Simg() {
   return (
     <div id='image-sec'>
-       <div class="text-content1">
+       <div className="text-content1">
         <h2>Business
           <em className='em1'> Solution </em>
           and
@@ -12,7 +12,7 @@ function Simg() {
           investment
         </h2>
        </div>
-       <div class="image-btns">
+       <div className="image-btns">
         <div className="header-btn1">Discover More</div>
             <div className="header-btn2">Contact Us</div>
        </div>

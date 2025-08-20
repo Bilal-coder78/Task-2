@@ -5,14 +5,14 @@ import girl from "../../assets/calculator-image.png"
 function Testimonial() {
   return (
     <div id='testimonial'>
-        <div class="image-sec">
+        <div className="image-sec">
             <img src={girl} alt="" className='image-girl'/>
         </div>
-        <div class="form-sec">
+        <div className="form-sec">
             <h3>Your Freedom</h3>
             <h2>Get A Financial Plan</h2>
             <form action="" className='form'>
-                <div class="sec1">
+                <div className="sec1">
                 <label >Your Name</label>
                 <input type="text"/>
                 <label >Your Email</label>

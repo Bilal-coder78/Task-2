@@ -16,7 +16,7 @@ function Nav({image}) {
           {visible ? <div className="ham">
             <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}><div className="ham1">About us</div></Link>
             <div className="ham1">Our Services</div>
-            <div className="ham1">Contact us</div>
+            <Link to='testimonial' activeClass='active' spy={true} smooth={true} duration={500}><div className="ham1">Contact us</div></Link>
           </div> : null}
           <div className="leftnav" >
             <Link to='home'  smooth={true} duration={500}><img src={image} className='logo' alt='' /></Link>
@@ -31,7 +31,7 @@ function Nav({image}) {
               }}>Pages<FaAngleDown /></li></Link>
               <Link to="testi" activeClass='active' spy={true} smooth={true} duration={500}><li>Testimonial</li></Link>
             </ul>
-            <Link to='contact' activeClass='active' spy={true} smooth={true} duration={500}><button className='btn-nav'>Contact Support</button></Link>
+            <Link to='testimonial' activeClass='active' spy={true} smooth={true} duration={500}><button className='btn-nav'>Contact Support</button></Link>
           </div>
           <div className="hamburger" ref={menu} onClick={()=>{
             mobile.current.classList.toggle("active-mobile")

@@ -6,13 +6,13 @@ function About() {
     const [activeClass,setactiveClass] = useState("Web-content")
     return (
         <div id='about'>
-            <div class="heading-content">
+            <div className="heading-content">
                 <h3>ABOUT US</h3>
                 <h2>Know Us Better</h2>
             </div>
-            <div class="overall-about">
-            <div class="all-sections">
-            <div class="btn-sections">
+            <div className="overall-about">
+            <div className="all-sections">
+            <div className="btn-sections">
                 <Link activeClass="active" to='web-con' spy={true} smooth={true} duration={500}><button onClick={()=>{
                     setactiveClass("Web-content")
                 }}>
@@ -29,7 +29,7 @@ function About() {
                     Web Coding
                 </button>
                 </div>
-                {activeClass==="Web-content" && (<div class="Web-content" id='web-con'>
+                {activeClass==="Web-content" && (<div className="Web-content" id='web-con'>
                     <table>
                         <thead>
                             <tr>
@@ -74,7 +74,7 @@ function About() {
                     </table>
                 </div>
     )}
-                {activeClass ==="Graphic-content" && ( <div class="Web-content">
+                {activeClass ==="Graphic-content" && ( <div className="Web-content">
                     <table>
                         <thead>
                             <tr>
@@ -120,7 +120,7 @@ function About() {
                 </div>
             
         )}
-                {activeClass ==="Web-coding" && ( <div class="Web-content">
+                {activeClass ==="Web-coding" && ( <div className="Web-content">
                     <table>
                         <thead>
                             <tr>
@@ -167,7 +167,7 @@ function About() {
             
         )}
             </div>
-            <div class="about-content">
+            <div className="about-content">
                 <h3>Please tell us about your idea and how you want it to be</h3>
                 <p>You are allowed to use this template for your websites. You are <strong>NOT allowed</strong>  to redistribute the template ZIP file on any other template websites.</p>
                 <p>Thank you for downloading and using our templates. Please tell your friends about our website.</p>
