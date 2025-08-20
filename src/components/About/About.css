@@ -1,5 +1,5 @@
 #about{
-    height: 100vh;
+    height: auto;
     width: 100%;
     margin-top: 2rem;
 }
@@ -129,7 +129,7 @@ tr{
     color: rgb(255, 81, 26);
 }
 
-@media (max-width:750px) {
+@media (max-width:850px) {
     .overall-about{
         flex-direction: column;
         justify-content: center;
@@ -143,10 +143,11 @@ tr{
     }
     .about-content{
         padding: 20px;
-        width: 100%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 5rem;
     }
     td{
         padding: 10px;

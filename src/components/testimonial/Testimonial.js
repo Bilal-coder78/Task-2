@@ -4,7 +4,7 @@ import girl from "../../assets/calculator-image.png"
 
 function Testimonial() {
   return (
-    <div id='testi'>
+    <div id='testimonial'>
         <div class="image-sec">
             <img src={girl} alt="" className='image-girl'/>
         </div>

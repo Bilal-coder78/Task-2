@@ -244,7 +244,7 @@ em{
     justify-content: center;
     flex-direction: column;
     background: white;
-    transform: translateY(-150%);
+    transform: translateY(-180%);
     width: 80%;
     height: 40vh;
     gap: 40px;
@@ -325,9 +325,12 @@ em{
     }
     
 }
-@media (max-width:350px) {
+@media (max-width:380px) {
 .header-text{
     gap: 50px;
     padding: 40px;
+}
+.mobile{
+    height: 50vh;
 }
 }
