@@ -36,3 +36,9 @@
         max-width: 100%;
     }
 }
+
+@media (max-width:400px) {
+    .partner-box .client{
+        width: 100px;
+    }
+}

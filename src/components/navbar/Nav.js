@@ -14,7 +14,7 @@ function Nav({image}) {
       <header className='head'>
         <nav id='nav'>
           {visible ? <div className="ham">
-            <div className="ham1">About us</div>
+            <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}><div className="ham1">About us</div></Link>
             <div className="ham1">Our Services</div>
             <div className="ham1">Contact us</div>
           </div> : null}

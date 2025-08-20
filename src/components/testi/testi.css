@@ -93,7 +93,7 @@
 
 @media (max-width:750px) {
     #testi{
-        height: 100vh;
+        height: auto;
     }
     .testi-box{
         width: 95%;
