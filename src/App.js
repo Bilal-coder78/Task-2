@@ -5,6 +5,7 @@ import Service from './components/Services/Service';
 import Simg from './components/Serviceimg/Simg';
 import About from './components/About/About';
 import Testimonial from './components/testimonial/Testimonial';
+import Testi from './components/testi/Testi';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Simg/>
     <About/>
     <Testimonial/>
+    <Testi/>
     </>
   );
 }
