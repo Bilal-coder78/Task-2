@@ -1,25 +1,49 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FaAngleDown } from "react-icons/fa6";
 import prev from "../../assets/prev.png"
 import next from "../../assets/next.png"
+import slide from "../../assets/slide-01.jpg"
 import "./nav.css"
 import { Link } from 'react-scroll';
 
 function Nav({image}) {
+
+  useEffect(()=>{
+    const navbar = document.getElementById("nav")
+    const head = document.querySelector(".head")
+
+    const handlescroll=()=>{
+      const headbottom = head.offsetTop + head.offsetHeight;
+
+      if(window.scrollY >= headbottom){
+        navbar.classList.add("fixed-top")
+        navbar.style.backgroundColor = "#212741";
+      }
+      else{
+        navbar.classList.remove("fixed-top")
+        navbar.style.backgroundColor = "transparent";
+      }
+    }
+    window.addEventListener("scroll",handlescroll);
+
+    return ()=>
+      window.removeEventListener("scroll",handlescroll)
+  },[])
+
   let menu = useRef()
   let mobile = useRef()
   const [visible, setvisible] = useState(false)
   return (
     <>
-      <header className='head'>
-        <nav id='nav'>
+      <header className='head'style={{backgroundImage: `url(${slide})`, backgroundSize: "cover", backgroundRepeat:"no-repeat" , backgroundPosition:"center", height:"100vh"}}>
+        <nav id='nav'className='w-100 d-flex align-items-center justify-content-between z-3'>
           {visible ? <div className="ham">
             <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}><div className="ham1">About us</div></Link>
             <div className="ham1">Our Services</div>
             <Link to='testimonial' activeClass='active' spy={true} smooth={true} duration={500}><div className="ham1">Contact us</div></Link>
           </div> : null}
-          <div className="leftnav" >
-            <Link to='home'  smooth={true} duration={500}><img src={image} className='logo' alt='' /></Link>
+          <div className="leftnav d-flex align-items-center justify-content-center text-white" >
+            <Link to='home'  smooth={true} duration={500}><img src={image} className='logo cursor-pointer' alt='' /></Link>
           </div>
           <div className="rightnav">
             <ul className='list-items'>
@@ -31,7 +55,7 @@ function Nav({image}) {
               }}>Pages<FaAngleDown /></li></Link>
               <Link to="testi" activeClass='active' spy={true} smooth={true} duration={500}><li>Testimonial</li></Link>
             </ul>
-            <Link to='testimonial' activeClass='active' spy={true} smooth={true} duration={500}><button className='btn-nav'>Contact Support</button></Link>
+            <Link to='testimonial' activeClass='active' spy={true} smooth={true} duration={500}><button className='btn btn-success px-3 py-2 fw-medium'>Contact Support</button></Link>
           </div>
           <div className="hamburger" ref={menu} onClick={()=>{
             mobile.current.classList.toggle("active-mobile")

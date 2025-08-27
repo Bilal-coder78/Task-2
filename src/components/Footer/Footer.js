@@ -1,13 +1,13 @@
 import React from 'react'
-import "./footer.css"
+// import "./footer.css"
 
 function Footer() {
   return (
-    <div id='footer'>
-        <p>Copyright © 2025 Mexant Co., Ltd. All Rights Reserved.
+    <div style={{backgroundColor:"#181d30"}} className='p-2 w-100 d-flex align-items-center justify-content-center'>
+        <p className='text-center text-white py-4'>Copyright © 2025 Mexant Co., Ltd. All Rights Reserved.
             <br/>
             Designed By
-            <a href="https://templatemo.com"> TemplateMo</a>
+            <a className='text-decoration-none text-danger' href="https://templatemo.com"> TemplateMo</a>
         </p>
     </div>
   )

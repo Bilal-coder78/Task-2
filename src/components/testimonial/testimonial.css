@@ -1,4 +1,4 @@
-#testimonial{
+/* #testimonial{
     width: 100%;
     height: auto;
     background-image: url(../../assets/calculator-bg.jpg);
@@ -10,17 +10,17 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
+} */
 
-.image-sec{
+/* .image-sec{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.image-girl{
+/* .image-girl{
     width: 92%;
-}
+} */
 
 .form-sec h3{
     font-size: 16px;
@@ -34,13 +34,13 @@
     color: #fff;
 }
 
-.form{
+/* .form{
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     margin-top: 2rem;
-}
+} */
 
 label{
     display: block;
@@ -75,24 +75,21 @@ select{
     background-color: rgba(121, 134, 151, 0.7);
 }
 
-.submit-btn{
-    background-color: rgb(255, 81, 26);
-    margin-top: 1.5rem;
-}
+
 
 @media (max-width:750px) {
-    #testimonial{
+    /* #testimonial{
         height: 100vh;
         margin-top: 5rem;
-    }
-    .form-sec{
+    } */
+    /* .form-sec{
         display: flex;
         align-items: start;
         justify-content: center;
         flex-direction: column;
         width: 100%;
         padding: 0px 10px;
-    }
+    } */
     form input{
         width: 410px;
     }
@@ -105,12 +102,12 @@ select{
     .submit-btn{
         margin-top: 2.5rem;
     }
-    .image-sec{
+    /* .image-girl{
         display: none;
-    }
+    } */
 }
 
-@media (max-width:390px) {
+@media (max-width:420px) {
     form input{
         width: 270px;
     }

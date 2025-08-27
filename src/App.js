@@ -9,7 +9,6 @@ import Testi from './components/testi/Testi';
 import Partner from './components/partners/Partner';
 import Footer from './components/Footer/Footer';
 import {Routes, Route } from 'react-router';
-import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -27,13 +26,6 @@ function App() {
         <Footer />
         </>
         }/>
-        <Route path='/contact' element={
-          <>
-          <Contact/>
-          <Footer/>
-          </>
-        }
-          />
         </Routes>
     </>
   );
