@@ -318,8 +318,8 @@ em{
         justify-content: center;
         flex-wrap: wrap;
         gap: 70px;
-        padding-left: 0;
-        padding: 50px;
+        padding-left: 50px;
+        /* padding: 50px; */
     }
     
 }
